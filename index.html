@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAL PORTFOLIO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+      <div class="login-form">
+            <h1>WELCOME BACK!</h1>
+            <div class="input">
+                <input id="passcode" type="password" placeholder=" Enter Password" required>
+            </div>
+<button type="submit" onclick="mylogin()" class="btn">Login</button>
+          </div>
+          <div class="gif-container">
+            <img class="gif" alt="gif" src="https://media.tenor.com/gP0009R3r7UAAAAi/peach-goma-peach-and-goma.gif"/> 
+            <img class="gif" alt="gif" src="https://media.tenor.com/wbqDH6hm_gcAAAAi/peach-goma-peach-and-goma.gif"/> 
+            <img class="gif" alt="gif" src="https://media.tenor.com/eb_1cgXn1KQAAAAi/cute-please.gif"/>
+        </div>
+            </div>
+            <script>
+        function mylogin() {
+          var pass = document.getElementById("passcode").value;
+          var cogent = "yuyu";
+      
+          if (pass === cogent) {
+            window.location.href = "profile.html";
+          } else if (pass === "") {
+            alert("Enter Password");
+          } else {
+            alert("Incorrect Password");
+          }
+        }
+      </script>
+
+    </script>
+</body>
+</html>

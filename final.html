@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container" style="border: 2px solid black; border-radius: 10px; padding: 5%; text-align: center;">
+        <h3 id="h3"> Welcome to our interactive quiz!</h3>
+
+        <div id="question"></div>
+        <button id="startQuiz" onclick="start()">Start</button>
+    </div>
+
+    <script>
+        function wrongAnswer() {
+            alert("Wrong answer, try again.")
+            start();
+        }
+
+        function start() {
+            document.getElementById('startQuiz').hidden = true;
+            document.getElementById('h3').hidden = true;
+            document.getElementById('question').innerHTML = "1. What is the color of grapes? <br/> <input type='text' id='input'> <br/> <button onclick = 'answer1()'>Submit</button>";
+        }
+
+        function answer1() {
+            var answer = document.getElementById('input').value;
+            if (answer.toLowerCase() == "violet") {
+                q2();
+            } else {
+                wrongAnswer();
+            }
+        }
+
+        function q2() {
+            document.getElementById('question').innerHTML = "2. What is the color of a ripe mango? <br/> <input type='text' id='input'> <br/> <button onclick = 'answer2()'>Submit</button>";
+        }
+
+        function answer2() {
+            var answer = document.getElementById('input').value;
+            if (answer.toLowerCase() == "yellow") {
+                q3();
+            } else {
+                wrongAnswer();
+            }
+        }
+
+        function q3() {
+            document.getElementById('question').innerHTML = "3. What is the color of an apple <br/> <input type='text' id='input'> <br/> <button onclick = 'answer3()'>Submit</button>";
+        }
+
+        function answer3() {
+            var answer = document.getElementById('input').value;
+            if (answer.toLowerCase() == "red") {
+                q4();
+            } else {
+                wrongAnswer();
+            }
+        }
+
+        function q4() {
+            document.getElementById('question').innerHTML = "4. What is the color of orange? <br/> <input type='text' id='input'> <br/> <button onclick = 'answer4()'>Submit</button>";
+        }
+
+        function answer4() {
+            var answer = document.getElementById('input').value;
+            if (answer.toLowerCase() == "orange") {
+                q5();
+            } else {
+                wrongAnswer();
+            }
+        }
+
+        function q5() {
+            document.getElementById('question').innerHTML = "5. What is the color of a banana <br/> <input type='text' id='input'> <br/> <button onclick = 'answer5()'>Submit</button>";
+        }
+
+        function answer5() {
+            var answer = document.getElementById('input').value;
+            if (answer.toLowerCase() == "yellow") {
+                end();
+            } else {
+                wrongAnswer();
+            }
+        }
+
+        function end() {
+            alert("Congrats, you did it!");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: 'Arial', sans-serif;
+                line-height: 1.6;
+                color: #333;
+                background: linear-gradient(45deg, #7e38b7, #9C89FF);
+            }
+            nav {
+          width: 100%;
+          position: fixed;
+          top: 0;
+          left: 0;
+          background-color: #7e38b7;
+          z-index: 99;
+          }
+  
+        .nav__content {
+          max-width: var(--max-width);
+          margin: auto;
+          padding: 1.5rem 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        
+        .logo {
+          font-size: 1.5rem;
+          font-style: italic;
+          font-weight: 600;
+          color: white;
+          transition: 0.3s;
+        }
+        
+        ul {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          list-style: none;
+          transition: left 0.3s;
+        }
+  
+        ul li a {
+          padding: 0.5rem 1rem;
+          border: 2px solid transparent;
+          text-decoration: none;
+          font-weight: 600;
+          color: white;
+          transition: 0.3s;
+        }
+        
+        ul li a:hover {
+          border-top-color: var(--secondary-color);
+          border-bottom-color: var(--secondary-color);
+          color: var(--secondary-color);
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile_image img {
+            max-width: 300px;
+            border-radius: 50%;
+            clip-path: circle();
+            display: block;
+            margin: 0 auto 20px;
+        }
+        .profile_name {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .profile_name h1 {
+            font-size: 2em;
+            font-weight: bold;
+            color: black;
+        }
+        .profile_title {
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 20px;
+        }
+        .title {
+            border-bottom: 2px solid #57385c;
+            color: black;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .skills_list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skills_list li {
+            background-color: #7e38b7;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .edu_item ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav__content">
+            <div class="logo">Rylieve.</div>
+            <ul>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="gallery.html">Personal Gallery</a></li>
+                <li><a href="calcu.html">Calculator</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="profile_image">
+            <img src="c:\Users\KARYL ALADAD\Pictures\Screenshots\Screenshot 2023-12-12 193243.png" alt="Karyl Aladad">
+        </div>
+        <div class="profile_name">
+            <h1>Karyl L. Aladad</h1>
+            <p class="profile_title">Bachelor of Science in Information Technology (BSIT)</p>
+        </div>
+        <h3 class="title">Information:</h3>
+        <p style="color: black;"><strong>Name:</strong> Karyl L. Aladad</p>
+        <p style="color: black;"><strong>Age:</strong> 18</p>
+        <p style="color: black;"><strong>Gender:</strong> Female</p>
+        <p style="color: black;"><strong>Address:</strong> Katipunan, Carmen, Bohol</p>
+        <p style="color: black;"><strong>Current Address:</strong> Gabi, Cordova, Cebu</p>
+        <p style="color: black;"><strong>Email Address:</strong> karylaladad039@gmail.com</p>
+        <h3 class="title">Skills :</h3>
+        <ul class="skills_list description">
+            <li>Public Speaking</li>
+            <li>C language</li>
+            <li>Creative</li>
+            <li>Flexibility</li>
+            <li>Leadership</li>
+            <li>Time Management</li>
+            <li>Work Ethic</li>
+            <li>Transparency</li>
+            <li>Wordpress</li>
+            <li>HTML CSS</li>
+        </ul>
+        <h3 class="title">Educational Attainment :</h3>
+        <div class="edu_item">
+            <ul class="skills_list li">
+                <li>Elementary: Katipunan Elementary School</li>
+                <li>High School: Katipunan National High School</li>
+                <li>Senior High School: Saint Anthony Academy of Carmen Inc.</li>
+                <li>College: Cordova Public College</li>
+            </ul>
+        </div>
+    <h3 class="title">Hobbies :</h3>
+    <ul class="skills_list li">
+        <li>Cooking</li>
+        <li>Baking</li>
+        <li>Reading</li>
+        <li>Crocheting</li>
+        <li>Watching (Movies, K-Drama, C-Drama, & Anime)</li>
+        <li>Dancing</li>
+        <li>Singing</li>
+        <li>Listening to Music</li>
+    </ul>
+    <h3 class="title">Talents :</h3>
+    <ul class="skills_list li">
+        <li>Cooking</li>
+        <li>Baking</li>
+        <li>Dancing</li>
+        <li>Singing</li>
+        <li>Art</li>
+    </ul>
+</div>
+    </div>
+</body>
+</html>

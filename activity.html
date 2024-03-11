@@ -1,0 +1,46 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome User</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            margin: 50px;
+        }
+        div{
+            height: 25vh;
+            overflow: hidden;
+            background: linear-gradient(45deg,#FEB15B, #E33981,#BA3A69);
+            font-family: 'Arial', sans-serif;
+            color: white; ;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container" style="border: 2px solid black; border-radius: 50px; padding: 10%; text-align: center;" >
+        <h1>Enter Your Last Name Here</h1>
+    <input type=" text" id="username">
+
+    <button onclick="displayWelcome()">Submit</button>
+
+    <div id="welcomeMessage"></div>
+    </div>
+    <script>
+        function displayWelcome() {
+            var username = document.getElementById("username").value;
+            var welcomeMessage = document.getElementById("welcomeMessage");
+            if (username == "") {
+                alert("Please enter your name");
+            } else {
+                welcomeMessage.innerHTML = "Welcome Mr./Mrs. " + username;
+            }
+        }
+    </script>
+
+</body>
+</html>
+

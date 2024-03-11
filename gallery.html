@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALLERY</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #7e38b7, #9C89FF);
+            color: #333;
+            padding-top: 60px;
+        }
+        nav {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #7e38b7;
+            z-index: 99;
+        }
+        .nav__content {
+            max-width: var(--max-width);
+            margin: auto;
+            padding: 1.5rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-style: italic;
+            font-weight: 600;
+            color: white;
+            transition: 0.3s;
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            list-style: none;
+            transition: left 0.3s;
+        }
+        ul li a {
+            padding: 0.5rem 1rem;
+            border: 2px solid transparent;
+            text-decoration: none;
+            font-weight: 600;
+            color: white;
+            transition: 0.3s;
+        }
+        ul li a:hover {
+            border-top-color: var(--secondary-color);
+            border-bottom-color: var(--secondary-color);
+            color: var(--secondary-color);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px;
+        }
+        .gallery div {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .gallery img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .gallery p {
+            color: #333;
+            margin-bottom: 8px;
+        }
+        .gallery strong {
+            color: #000;
+    
+        }   
+        .video-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .video-container video {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .video-info {
+            text-align: left;
+        }
+        .video-info p {
+            margin-bottom: 10px;
+        }
+        .video-info strong {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav__content">
+            <div class="logo">Rylieve.</div>
+            <ul>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="gallery.html">Personal Gallery</a></li>
+                <li><a href="calcu.html">Calculator</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="gallery">
+        <div>
+            <img src="c:\Users\KARYL ALADAD\Pictures\IMG_20220723_140512_262.jpg" alt="family">
+            <p><strong>TITLE:</strong> Mama & Papa</p>
+            <p><strong>DATE:</strong> Jul 23, 2022</p>
+            <p><strong>DESCRIPTION:</strong> Just a Simple Picture Of my Beloved Parents attending a Wedding, with a smile on their faces.</p>
+        </div>
+        <div>
+            <img src="c:\Users\KARYL ALADAD\Pictures\received_1040769927077965.jpg" alt="family">
+            <p><strong>TITLE:</strong> @18TH!</p>
+            <p><strong>DATE:</strong>Oct 31, 2023</p>
+            <p><strong>DESCRIPTION:</strong> My Simple Yet Memorable 18th Birthday.</p>
+        </div>
+        <div>
+            <img src="c:\Users\KARYL ALADAD\Pictures\lola.jpg" alt="family">
+            <p><strong>TITLE:</strong> LOLA & ME</p>
+            <p><strong>DATE:</strong>  Nov 12, 2023</p>
+            <p><strong>DESCRIPTION:</strong> My Beloved Lola.</p>
+        </div>
+        <div>
+            <img src="c:\Users\KARYL ALADAD\Pictures\IMG_20221216_110307_885.jpg" alt="family">
+            <p><strong>TITLE:</strong> Mama </p>
+            <p><strong>DATE:</strong> Dec 16, 2022</p>
+            <p><strong>DESCRIPTION:</strong> Mother Darling.</p>
+        </div>
+       
+            <div>
+                <img src="c:\Users\KARYL ALADAD\Pictures\IMG_20220723_140621_513.jpg" alt="family">
+                <p><strong>TITLE:</strong> With the Fam </p>
+                <p><strong>DATE:</strong> Jul 23, 2022</p>
+                <p><strong>DESCRIPTION:</strong> LA FAMILIA.</p>
+            </div>
+           
+            <div>
+                <img src="c:\Users\KARYL ALADAD\Pictures\IMG_20230114_203221_522.jpg" alt="family">
+                <p><strong>TITLE:</strong> Me and my Monkey</p>
+                <p><strong>DATE:</strong> Jan 14, 2022</p>
+                <p><strong>DESCRIPTION:</strong> With my Favorite Person in the Whole Wide World.</p>
+            </div>
+            <div>
+                <img src="c:\Users\KARYL ALADAD\Pictures\IMG_20220101_000727_500.jpg" alt="family">
+                <p><strong>TITLE:</strong> NEW YEAR!</p>
+                <p><strong>DATE:</strong> Jan 01, 2022</p>
+                <p><strong>DESCRIPTION:</strong> Thankful for the blessings despite of the tradegy (After Bagyong Oddette).</p>
+            </div>
+            <div>
+                <img src="c:\Users\KARYL ALADAD\Pictures\339927814_1130924671105107_7974578774981248695_n.jpg" alt="family">
+                <p><strong>TITLE:</strong> New Year!</p>
+                <p><strong>DATE:</strong> Jan 01, 2023</p>
+                <p><strong>DESCRIPTION:</strong> Simple yet Fruitful.</p>
+            </div>
+            <div>
+                <img src="c:\Users\KARYL ALADAD\Pictures\received_272839995219781.jpeg" alt="family">
+                <p><strong>TITLE:</strong> Graduation</p>
+                <p><strong>DATE:</strong> Jan 3, 2023</p>
+                <p><strong>DESCRIPTION:</strong>On my graduation day , full of blessings and my small yet proud achievements.</p>
+            </div>
+            <div>
+                <img src="c:\Users\KARYL ALADAD\Pictures\397066436_315811904643225_1769383012758994789_n.jpg" alt="family">
+                <p><strong>TITLE:</strong> LOLA & ME</p>
+                <p><strong>DATE:</strong> Oct 22, 2023</p>
+                <p><strong>DESCRIPTION:</strong> Appreciation of my Beloved Lola.</p>
+            </div>
+            <div>
+                <img src="c:\Users\KARYL ALADAD\Pictures\IMG_20221101_065641_837.jpg" alt="family">
+                <p><strong>TITLE:</strong> Home</p>
+                <p><strong>DATE:</strong> Nov 01, 2022</p>
+                <p><strong>DESCRIPTION:</strong> St. Anthony the Abbot Parish of Carmen Bohol.</p>
+            </div>
+            <div>
+                <img src="c:\Users\KARYL ALADAD\Pictures\IMG_20230602_200420_801.jpg" alt="family">
+                <p><strong>TITLE:</strong> Achievers (Top 5)</p>
+                <p><strong>DATE:</strong> Jan 3, 2023</p>
+                <p><strong>DESCRIPTION:</strong> Appreciating my Achievements year 2022-2023.</p>
+            </div>
+            <div>
+                <img src="c:\Users\KARYL ALADAD\Pictures\received_630328058658797.jpeg" alt="family">
+                <p><strong>TITLE:</strong>Thesis</p>
+                <p><strong>DATE:</strong> May 19, 2023</p>
+                <p><strong>DESCRIPTION:</strong> Thesis Approval.</p>
+            </div>
+           
+            <div>
+              <img src="c:\Users\KARYL ALADAD\Pictures\IMG_20220212_073016_554.jpg" alt="family">
+              <p><strong>TITLE:</strong> COUSINS</p>
+              <p><strong>DATE:</strong> Feb 12, 2022</p>
+              <p><strong>DESCRIPTION:</strong> My most gourgeous cousins at my cousins wedding.</p>
+          </div>
+          
+       
+      <div>
+        <img src="c:\Users\KARYL ALADAD\Pictures\received_1233315094183225.jpeg" alt="family">
+        <p><strong>TITLE:</strong> ABM cuties</p>
+        <p><strong>DATE:</strong> Oct 27, 2022</p>
+        <p><strong>DESCRIPTION:</strong> With my St. Luke and St. Joan of Arc Fam.</p>
+    </div>
+  <div>
+    <img src="c:\Users\KARYL ALADAD\Pictures\received_717916820038050.jpeg" alt="family">
+    <p><strong>TITLE:</strong> St. Joan of Arc</p>
+    <p><strong>DATE:</strong> Feb 28, 2023</p>
+    <p><strong>DESCRIPTION:</strong> ABM With our Advisor.</p>
+</div>
+<div class="video-container">
+    <video controls>
+        <source src="c:\Users\KARYL ALADAD\Downloads\376796828_6562024117247419_9009665846209796146_n.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="video-info">
+        <p><strong>TITLE:</strong> Bohol</p>
+        <p><strong>DATE:</strong> Sep 23, 2023</p>
+        <p><strong>DESCRIPTION:</strong> A place where i can also called HOME.</p>
+    </div>
+</div>
+<div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MtU9CZk9Eto" frameborder="0" allowfullscreen></iframe>
+    <div class="video-info">
+        <p><strong>TITLE:</strong>Have your Way</p>
+        <p><strong>DATE:</strong> Jul 23, 2022</p>
+        <p><strong>DESCRIPTION:</strong> My favorite Music (worship songs).</p>
+    </div>
+</div>
+    </div>
+
+</body>
+</html>

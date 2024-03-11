@@ -1,0 +1,183 @@
+.sels{
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+  .esp{
+    position: absolute;
+    top: 40%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+  }
+  
+
+.spinner{
+position: absolute;
+top: 10%;
+left: 20%;
+transform: translate(-50%, -50%);
+}
+
+/* Button styles */
+.transition-button {
+  transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: #0395f7;
+    color: #fff;
+    transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+    
+  
+  /* Hover effect */
+  .transition-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.1); /* Scale the button on hover */
+    transform: scale(1.1);
+
+  }
+
+/* Styles for the spinner */
+.spinner {
+  width: 250px;
+  height: 80px;
+  border: 5px solid #229ff1;
+  border-top: 5px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear; /* Animation applied */
+}
+
+/* Keyframes for the spinner animation */
+@keyframes spin {
+  0% { transform: rotate(45deg); }
+  100% { transform: rotate(360deg); }
+}
+
+ * {
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+height: 100vh;
+overflow: hidden;
+background: linear-gradient(45deg, #061de3, #e306ca);
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: white;
+display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper,
+.single-card{
+  height: 450px;
+  max-width: 300px;
+  margin: auto;
+  position: relative;
+
+}
+.wrapper{
+  perspective: 900px;
+}
+
+.single-card{
+ text-align: center;
+transition: all 1.5s cubic-bezier(0.7, -.5, 0.3, 1.8);
+transform-style: preserve-3d;
+
+}
+
+.wrapper:hover .single-card{
+  transform: rotateY(180deg);
+}
+
+.front,
+.back{
+  width: 300px;
+  position: relative;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+
+.front{
+ cursor: pointer;
+ height: 100%;
+ backface-visibility: hidden;
+ border-radius: 50px ;
+background-size: cover;
+background-position: center center;
+background-image: url(https://i.pinimg.com/550x/18/39/a0/1839a0e309e572b947fb24871bb58b83.jpg);
+}
+
+.back{
+  transform: rotateY(180deg);
+position: absolute;
+border-radius: 50px;
+height: 450px;
+background: black;
+
+}
+
+.content{
+  padding-top: 25%;
+}
+
+.content h2{
+  font-size: 40px;
+  margin: 0;
+  font-weight: 300;
+  font-weight: bold;
+
+}
+.content p{
+  font-size: 35px;
+  margin: 0;
+  font-weight: 300;
+}
+
+.cube {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotateCube 5s infinite linear;
+}
+
+.side {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border: 2px solid #333;
+}
+
+.frontt { transform: translateZ(100px); }
+.backk { transform: rotateY(180deg) translateZ(100px); }
+.right { transform: rotateY(90deg) translateZ(100px); }
+.left { transform: rotateY(-90deg) translateZ(100px); }
+.top { transform: rotateX(90deg) translateZ(100px); }
+.bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+@keyframes rotateCube {
+  from { transform: rotateX(0) rotateY(0); }
+  to { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+.cube{
+  position: absolute;
+  top: 40%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+  }
+
